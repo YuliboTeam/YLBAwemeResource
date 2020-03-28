@@ -1,0 +1,27 @@
+PODS:
+  - YLBAwemeResource (0.1.0):
+    - YLBCommon
+  - YLBCommon (0.9.0)
+
+DEPENDENCIES:
+  - YLBAwemeResource (from `../`)
+  - YLBCommon (from `https://github.com/ProBobo/YLBCommon.git`)
+
+EXTERNAL SOURCES:
+  YLBAwemeResource:
+    :path: "../"
+  YLBCommon:
+    :git: https://github.com/ProBobo/YLBCommon.git
+
+CHECKOUT OPTIONS:
+  YLBCommon:
+    :commit: 72ee05ef433a79725ad7b2d5548d79bb619d051c
+    :git: https://github.com/ProBobo/YLBCommon.git
+
+SPEC CHECKSUMS:
+  YLBAwemeResource: b81a7a82cb1fe83e612f6a8fcc45a2961ef7a7ca
+  YLBCommon: 91ccf4d00ca59a87032937a57984c9787a88efe1
+
+PODFILE CHECKSUM: 6796c4735273520ebe4133146de942b1f7dc95e8
+
+COCOAPODS: 1.8.4

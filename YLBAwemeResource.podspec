@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'YLBAwemeResource'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of YLBAwemeResource.'
+  s.summary          = 'YLBAwemeResource.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,23 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/ProBobo/YLBAwemeResource'
+  s.homepage         = 'https://github.com/YuliboTeam/YLBAwemeResource'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ProBobo' => '564885081@qq.com' }
-  s.source           = { :git => 'https://github.com/ProBobo/YLBAwemeResource.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/YuliboTeam/YLBAwemeResource.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'YLBAwemeResource/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'YLBAwemeResource' => ['YLBAwemeResource/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'YLBAwemeResource' => ['YLBAwemeResource/Assets/*']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'YLBCommon'
 end

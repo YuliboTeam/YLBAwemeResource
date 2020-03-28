@@ -37,11 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00754C439CF92649079E1F39 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		00D5391D15E4C7522D512C24 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		00754C439CF92649079E1F39 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		00D5391D15E4C7522D512C24 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		0B44CC0E6DC9A96AF9727981 /* Pods_YLBAwemeResource_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLBAwemeResource_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C80FE6E1165828092C319B /* Pods-YLBAwemeResource_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLBAwemeResource_Example.release.xcconfig"; path = "Target Support Files/Pods-YLBAwemeResource_Example/Pods-YLBAwemeResource_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3E3DD4D0F93697FED1B03F01 /* YLBAwemeResource.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YLBAwemeResource.podspec; path = ../YLBAwemeResource.podspec; sourceTree = "<group>"; };
+		3E3DD4D0F93697FED1B03F01 /* YLBAwemeResource.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YLBAwemeResource.podspec; path = ../YLBAwemeResource.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* YLBAwemeResource_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLBAwemeResource_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -193,7 +193,6 @@
 				A28E4A5413C671CE156E07C3 /* Pods-YLBAwemeResource_Tests.debug.xcconfig */,
 				A9EF54FF69DF9C67141B861B /* Pods-YLBAwemeResource_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -244,9 +243,9 @@
 		6003F582195388D10070C39A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = YULIBO;
+				CLASSPREFIX = YLB;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = ProBobo;
+				ORGANIZATIONNAME = "余礼钵";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -347,10 +347,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YLBAwemeResource_Example/Pods-YLBAwemeResource_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/YLBAwemeResource/YLBAwemeResource.framework",
+				"${BUILT_PRODUCTS_DIR}/YLBCommon/YLBCommon.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLBAwemeResource.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLBCommon.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

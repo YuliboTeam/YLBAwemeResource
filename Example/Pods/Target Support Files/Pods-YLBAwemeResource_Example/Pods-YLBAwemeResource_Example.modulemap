@@ -1,0 +1,6 @@
+framework module Pods_YLBAwemeResource_Example {
+  umbrella header "Pods-YLBAwemeResource_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
